@@ -11,6 +11,8 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
+# 1 задание
+
 @pytest.fixture
 def driver():
     driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
@@ -28,6 +30,8 @@ def test_text(driver):
     new_submit_button = driver.find_element(By.ID, "updatingButton")
     assert new_submit_button.text=="ITCH"
 
+
+#  2 задание
 
 # @pytest.fixture
 # def driver():
